@@ -57,8 +57,16 @@ export default function Home() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black items-center">
-      <main className="flex min-h-screen w-full flex-col items-center justify-between md:py-20 py-16 px-5 bg-white dark:bg-black sm:items-center">
+    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black items-center ">
+      <main className="relative flex min-h-screen w-full flex-col items-center justify-between md:py-20 py-16 px-5 bg-white dark:bg-black sm:items-center">
+        <div className="absolute right-0 top-0">
+          <Image
+            src={"/csir-logo.png"}
+            alt="logo"
+            width={"180"}
+            height={"150"}
+          />
+        </div>
         <div className=" flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className=" text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Real time ingot counter
